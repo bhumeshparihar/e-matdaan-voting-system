@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>E-Matdaan - Digital Voting System</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="header">
+  <div class="header-inner">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Emblem_of_India.svg">
+    <div>
+      <div class="header-title">E-Matdaan</div>
+      <div class="header-sub">Digital Voting System | Government of India (Demo)</div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- AUTH -->
+  <div class="card" id="authCard">
+    <h2>Voter Login</h2>
+
+    <label>Aadhaar Number
+      <input id="li_aadhaar" maxlength="12">
+    </label>
+
+    <label>Phone Number
+      <input id="li_phone" maxlength="10">
+    </label>
+
+    <div class="note">Demo OTP: 123456</div>
+
+    <div class="row">
+      <button id="li_send_otp">Send OTP</button>
+      <button id="li_verify_otp" class="secondary" style="display:none">Verify OTP</button>
+    </div>
+
+    <div id="li_otp_section" style="display:none">
+      <input id="li_otp" maxlength="6" placeholder="Enter OTP">
+    </div>
+
+    <div id="li_face_section" style="display:none">
+      <p>Face Verification Required</p>
+      <video id="li_video" width="320" height="240" autoplay muted></video>
+      <canvas id="li_canvas" style="display:none"></canvas>
+      <div class="row">
+        <button id="li_start_cam">Start Camera</button>
+        <button id="li_capture" class="secondary" disabled>Capture & Login</button>
+      </div>
+      <div id="li_face_msg"></div>
+    </div>
+
+    <div id="li_message" class="message"></div>
+  </div>
+
+  <!-- DASHBOARD -->
+  <div class="card" id="dashboard" style="display:none">
+    <h2>Ballot Unit</h2>
+    <div id="userInfo"></div>
+    <div class="candidates" id="candidates"></div>
+  </div>
+
+</div>
+
+<div class="footer">
+  Secure • Transparent • Verified
+</div>
+
+<script src="/static/app.js"></script>
+</body>
+</html>

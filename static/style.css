@@ -1,0 +1,157 @@
+:root {
+  --primary: #1e3a8a;
+  --primary-dark: #172554;
+  --accent: #2563eb;
+  --border: #d1d5db;
+  --muted: #6b7280;
+  --bg: #f3f4f6;
+  --card: #ffffff;
+  --success: #15803d;
+  --danger: #dc2626;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: #111827;
+}
+
+/* HEADER */
+.header {
+  background: white;
+  border-bottom: 3px solid var(--primary);
+  padding: 16px 0;
+}
+
+.header-inner {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header img {
+  width: 40px;
+}
+
+.header-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.header-sub {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+/* MAIN */
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+.card {
+  background: var(--card);
+  padding: 30px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: var(--primary);
+  margin-bottom: 12px;
+}
+
+p {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* FORM */
+label {
+  display: block;
+  margin-bottom: 14px;
+  font-size: 14px;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-size: 14px;
+  background: white;
+}
+
+button {
+  padding: 10px 16px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button:hover {
+  background: var(--primary-dark);
+}
+
+button.secondary {
+  background: white;
+  border: 1px solid var(--border);
+  color: black;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.note {
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+
+.message {
+  margin-top: 10px;
+  color: var(--danger);
+  font-size: 14px;
+}
+
+/* CANDIDATES */
+.candidates {
+  margin-top: 20px;
+}
+
+.candidate {
+  border: 1px solid var(--border);
+  padding: 16px;
+  margin-bottom: 12px;
+  border-radius: 4px;
+  background: #f9fafb;
+}
+
+.candidate strong {
+  display: block;
+  font-size: 15px;
+}
+
+.footer {
+  text-align: center;
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: 40px;
+}
